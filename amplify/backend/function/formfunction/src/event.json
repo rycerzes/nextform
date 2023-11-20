@@ -1,11 +1,9 @@
 {
   "httpMethod": "POST",
-  "path": "/item",
-  "queryStringParameters": {
-    "limit": "10"
-  },
+  "path": "/register",
+  "queryStringParameters": null,
   "headers": {
     "Content-Type": "application/json"
   },
-  "body": "{name:\"Hello from the event.json body\"}"
+  "body": "{\"name\":\"John Doe\",\"email\":\"john.doe@example.com\",\"roll\":\"123456\",\"phone\":\"1234567890\",\"year\":\"4\"}"
 }
