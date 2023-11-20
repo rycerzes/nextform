@@ -13,7 +13,7 @@ const awsmobile = {
     "aws_cloud_logic_custom": [
         {
             "name": "formapi",
-            "endpoint": "https://xs1wsk16ca.execute-api.ap-south-1.amazonaws.com/dev",
+            "endpoint": "https://z5e47rgqcc.execute-api.ap-south-1.amazonaws.com/dev",
             "region": "ap-south-1"
         }
     ]
