@@ -15,7 +15,7 @@
       "function": {
         "formfunction": {
           "deploymentBucketName": "amplify-nextform-dev-204224-deployment",
-          "s3Key": "amplify-builds/formfunction-454447635a6d64687a66-build.zip"
+          "s3Key": "amplify-builds/formfunction-44327239794142577234-build.zip"
         }
       },
       "storage": {

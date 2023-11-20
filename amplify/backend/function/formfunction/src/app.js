@@ -46,8 +46,13 @@ function id () {
   return Math.random().toString(36).substring(2) + Date.now().toString(36);
 }
 
-function time () {
-  return new Date().getTime();
+function time() {
+  const now = new Date();
+  const timezoneOffsetMinutes = now.getTimezoneOffset();
+  const offset = timezoneOffsetMinutes + 330; // 330 minutes for +5:30
+  const offsetTime = new Date(now.getTime() - offset * 60 * 1000);
+  const localISOTime = offsetTime.toISOString().slice(0,-1);
+  return localISOTime;
 }
 
 app.post('/register', function(req, res) {
