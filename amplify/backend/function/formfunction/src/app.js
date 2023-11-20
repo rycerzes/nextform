@@ -48,10 +48,9 @@ function id () {
 
 function time() {
   const now = new Date();
-  const timezoneOffsetMinutes = now.getTimezoneOffset();
-  const offset = timezoneOffsetMinutes + 330; // 330 minutes for +5:30
-  const offsetTime = new Date(now.getTime() - offset * 60 * 1000);
-  const localISOTime = offsetTime.toISOString().slice(0,-1);
+  const ISTOffset = 330; // IST is UTC+05:30
+  const offsetTime = new Date(now.getTime() + ISTOffset * 60 * 1000);
+  const localISOTime = offsetTime.toISOString().slice(0, -1);
   return localISOTime;
 }
 
@@ -76,6 +75,7 @@ app.post('/register', function(req, res) {
 
 app.listen(3000, function() {
     console.log("App started")
+    console.log(time())
 });
 
 // Export the app object. When executing the application local this does nothing. However,
