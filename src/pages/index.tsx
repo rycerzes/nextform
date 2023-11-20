@@ -50,7 +50,7 @@ async function addReg(data: any) {
       param1: 'dev',
     });
 
-    const response = await fetch(`https://xs1wsk16ca.execute-api.ap-south-1.amazonaws.com/dev/register`, {
+    const response = await fetch(`https://z5e47rgqcc.execute-api.ap-south-1.amazonaws.com/dev/register`, {
       method: 'POST',
       // mode: 'no-cors',
       headers: {
