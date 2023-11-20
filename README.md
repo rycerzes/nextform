@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://nextf0rm.vercel.app/">
+  <img alt="Next.js 13 and Express.JS" src="https://socialify.git.ci/rycerzes/nextform/image?description=1&descriptionEditable=built%20with%20Next.js%2C%20Express.js%20and%20AWS&font=Inter&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F93%2FAmazon_Web_Services_Logo.svg&name=1&pattern=Solid&theme=Dark">
+  <h1 align="center">Next.js Forms</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  An open-source web-form app built with Next.js<br>
+  Express.js and AWS for the REST API and database.
+</p>
+
+<p align="center">
+  <a href="#features"><strong>Features</strong></a> ·
+  <a href="#running-locally"><strong>Running locally</strong></a> ·
+  <a href="#authors"><strong>Authors</strong></a>
+</p>
+<br/>
+
+## Features
+
+- [Next.js](https://nextjs.org) App Router
+- [Amazon Web Services](https://docs.aws.amazon.com/) for backend functionality
+- The [Amplify Framework](https://docs.amplify.aws/) for AWS integration
+- Support for `REST API`, NoSQL Database `DynamoDB`, and `Lambda` functions
+- Edge runtime-ready
+- [shadcn/ui](https://ui.shadcn.com)
+  - Styling with [Tailwind CSS](https://tailwindcss.com)
+  - [Radix UI](https://radix-ui.com) for headless component primitives
+- [Cross Origin Resource Sharing ](https://aws.amazon.com/what-is/cross-origin-resource-sharing) for authentication
+
+## Running locally
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app template should now be running on [localhost:3000](http://localhost:3000/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API Routing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The `REST API` is hosted on AWS using a Lambda function which deploys a `Serverless Express.js app`. Source code for lambda function is in the [`amplify/backend/function/formfunction/src/app.js`](https://github.com/rycerzes/nextform/tree/main/amplify/backend/function/formfunction/src.js)
 
-## Learn More
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
 
-To learn more about Next.js, take a look at the following resources:
+> To learn more about the `Serverless Express.js app` and how to deploy it, visit the [`amplify/README.md`](https://github.com/rycerzes/nextform/tree/main/amplify/README.md) 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Authors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is created by [MLSA KIIT](https://mlsakiit.com) team members:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Sourasish Basu ([@SourasishBasu](https://github.com/jaredpalmer)) - [MLSA KIIT](https://mlsakiit.com)
+- Swapnil Dutta ([@rycerzes](https://github.com/shuding_)) - [MLSA KIIT](https://mlsakiit.com)
