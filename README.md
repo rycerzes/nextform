@@ -43,8 +43,9 @@ Your app template should now be running on [localhost:3000](http://localhost:300
 The `REST API` is hosted on AWS using a Lambda function which deploys a `Serverless Express.js app`. Source code for lambda function is in the [`amplify/backend/function/formfunction/src/app.js`](https://github.com/rycerzes/nextform/tree/main/amplify/backend/function/formfunction/src.js)
 
 > [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
+> The app template which is running on [localhost:3000](http://localhost:3000/) is using the `REST API` hosted on AWS. It has CORS enabled which means your app template will not be able make requests to the `REST API` hosted on AWS. 
 
+> [!NOTE]
 > To learn more about the `Serverless Express.js app` and how to deploy it, visit the [`amplify/README.md`](https://github.com/rycerzes/nextform/tree/main/amplify/README.md) 
 
 ## Authors
