@@ -24,6 +24,51 @@ const app = express()
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
+app.options('*', (req, res) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', '*');
+  res.header('Access-Control-Allow-Methods', '*');
+  res.sendStatus(200);
+});
+
+// Enable CORS for all methods
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*")
+  res.header("Access-Control-Allow-Headers", "*")
+  res.header("Access-Control-Allow-Methods", "*") 
+  next()
+});
+
+const AWS = require('aws-sdk')
+const docClient =  new AWS.DynamoDB.DocumentClient();
+
+function id () {
+  return Math.random().toString(36).substring(2) + Date.now().toString(36);
+}
+
+function time () {
+  return new Date().getTime();
+}
+
+app.post('/register', function(req, res) {
+  const params = {
+    TableName: process.env.STORAGE_FORMTABLE_NAME,
+    Item: {
+      id: id(),
+      name: req.body.name,
+      email: req.body.email,
+      roll: req.body.roll,
+      phone: req.body.phone,
+      year: req.body.year,
+      onCreated: time() 
+    }
+  }
+  docClient.put(params, function(err, data) {
+    if (err) res.json({ err })
+    else res.json({ success: 'Form successfully submitted' })
+  })
+});
+
 app.listen(3000, function() {
     console.log("App started")
 });
