@@ -30,6 +30,17 @@
 - [Cross Origin Resource Sharing ](https://aws.amazon.com/what-is/cross-origin-resource-sharing) for legitimate requests only
 - [Zod](https://zod.dev) Typesafe Form Validation ensuring sanitized input is always sent
 
+### Tech Stack
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-white?style=for-the-badge&logo=express&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React.js](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Amplify](https://img.shields.io/badge/Amplify-fc3f05?style=for-the-badge&logo=aws-amplify&logoColor=white)
+![API Gateway](https://img.shields.io/badge/API%20Gateway-8A2BE2?style=for-the-badge&logo=amazon-api-gateway&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-2d2dba?style=for-the-badge&logo=amazon-dynamodb&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=aws-lambda&logoColor=white)
+
 ## Overview
 <img alt="AWS Architecture" src="./assets/architecture-overview.png">
 
@@ -62,9 +73,8 @@ The `REST API` is hosted on AWS using a Lambda function which deploys a `Serverl
 
 This project is created by [MLSA KIIT](https://mlsakiit.com) team members:
 
-- Sourasish Basu ([@SourasishBasu](https://github.com/jaredpalmer)) - [MLSA KIIT](https://mlsakiit.com)
-- Swapnil Dutta ([@rycerzes](https://github.com/shuding_)) - [MLSA KIIT](https://mlsakiit.com)
-- 
+- Sourasish Basu ([@SourasishBasu](https://github.com/SourasishBasu)) - [MLSA KIIT](https://mlsakiit.com)
+- Swapnil Dutta ([@rycerzes](https://github.com/rycerzes)) - [MLSA KIIT](https://mlsakiit.com)
 ## Version
 | Version | Date          		| Comments        |
 | ------- | ------------------- | --------------- |
