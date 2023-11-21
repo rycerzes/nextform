@@ -1,5 +1,5 @@
 {
-  "httpMethod": "POST",
+  "httpMethod": "GET",
   "path": "/register",
   "queryStringParameters": null,
   "headers": {
