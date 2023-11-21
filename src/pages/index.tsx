@@ -42,13 +42,8 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
-import { post } from 'aws-amplify/api';
-
 async function addReg(data: any) {
   try {
-    const queryParams = new URLSearchParams({
-      param1: 'dev',
-    });
 
     const response = await fetch(`https://z5e47rgqcc.execute-api.ap-south-1.amazonaws.com/dev/register`, {
       method: 'POST',
