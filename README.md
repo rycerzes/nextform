@@ -78,7 +78,7 @@ This project is created by [MLSA KIIT](https://mlsakiit.com) team members:
 ## Version
 | Version | Date          		| Comments        |
 | ------- | ------------------- | --------------- |
-| 1.0     | Nov 21th, 2023   | Initial release |
+| 1.0     | 21-11-2023 | Initial release |
 
 ## Future Roadmap
 - [ ] Authentication and Authorization using API Keys
